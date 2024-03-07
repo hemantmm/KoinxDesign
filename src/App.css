@@ -1,0 +1,165 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar__logo {
+    font-size: 24px;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar__menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar__menu.active a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  
+  .navbar__toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar__menu {
+      display: none;
+    }
+  
+    .navbar__toggle {
+      display: block;
+      font-size: 20px;
+    }
+  }
+  
+
+  /* TwoBoxes.css */
+.container {
+    display: flex;
+  }
+  
+  .left-box {
+    width: 70%;
+    background-color: #f0f0f0; /* Light gray */
+    padding: 20px;
+  }
+  
+  .right-box {
+    width: 30%;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-box,
+    .right-box {
+      width: 100%;
+    }
+  }
+  
+
+
+
+  /* RightSideBox.css */
+.right-side-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* TopContent.css */
+  .top-content {
+    margin-bottom: 20px;
+  }
+  
+  .top-content h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .top-content p {
+    color: #666;
+  }
+  
+  .top-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .top-content button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .top-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .trending-coins {
+    padding: 0 20px;
+  }
+  
+  .trending-coins h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .trending-coins ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .trending-coins li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .trending-coins img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .trending-coins span {
+    font-size: 16px;
+  }
+  
+  /* Additional styling for the coin movement */
+  .trending-coins .positive {
+    color: green;
+  }
+  
+  .trending-coins .negative {
+    color: red;
+  }
+  

@@ -1,4 +1,5 @@
 import './App.css';
+import CryptoContext from './components/CryptoContext';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
    <>
    {/* <h1 className='bg-red-500'>hi</h1> */}
    <Navbar />
+   <CryptoContext />
    </>
   );
 }
